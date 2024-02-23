@@ -6,9 +6,10 @@
 }
 
 body {
-    background-image: url('/assets/Shape.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(/assets/Shape.png), url(/assets/graphic\ design\ course\ description\ background\ overlay.png);
+    background-repeat: no-repeat, repeat;
+    background-size: contain, cover;
+    background-position: right bottom, left top;
 }
 
 .navbar {
