@@ -18,26 +18,139 @@
     align-self: center; 
  }
  */
-
- .category .section-subtitle {
-     color: red; 
+.courses__section {
+  background-image: url(/assets/graphic\ design\ course\ description\ background\ overlay.png);
+    background-position: right;
+    background-repeat: no-repeat; 
 }
 
-.category .section-title { 
+.courses h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #ffd512;
+  
+}
+ 
+ #services {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.service {
+  text-align: center;
+  width: 200px;
+  padding: 20px;
+  border: 2px solid #01005e;
+  border-radius: 8px;
+  
+}
+
+.service h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Poppin", sans-serif;
+  color: #01005e;
+}
+
+.service p {
+  margin-bottom: 0;
+  color: #000;
+  font-weight: 500;
+
+}
+
+/* Testimonial Section */
+.section-2 h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color:#000;
+  margin-left: 10rem;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #01005e;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 300px;
+}
+
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 1px solid #fff;
+}
+
+.testimonial p {
+  font-style: italic;
+  color: white;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.testimonial span {
+  font-weight: bold;
+  color: #ffd512;
+}
+
+.courses__img-container {
+  text-align: center;
+}
+
+
+
+
+
+
+
+ /* .section {
+  padding: 0 20px;
+ }
+
+
+ .courses .section-subtitle {
+    color: #01005e;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.courses .section-title { 
     color: aqua; 
+    
 }
 
-.category .section-text { 
+.courses .section-text { 
     margin-block-end: 40px; 
 }
 
-.category-card {
+.grid-list {
+  align-items: center;
+}
+
+.courses-card {
   padding: 50px 30px;
   text-align: center;
   border-radius: 5px;
 }
 
-.category-card .card-icon {
+.courses-card .card-icon {
   background-color: blueviolet;
   width: 80px;
   height: 80px;
@@ -48,13 +161,13 @@
   margin-block-end: 30px;
 }
 
-.category-card .card-text {
+.courses-card .card-text {
   color: grey;
   font-size: 5rem;
   margin-block: 15px 25px;
 }
 
-.category-card .card-badge {
+.courses-card .card-badge {
   background-color: greenyellow;
   color: blueviolet;
   font-size: 5rem;
@@ -64,3 +177,4 @@
   margin-inline: auto;
   border-radius: 6px;
 }
+ */

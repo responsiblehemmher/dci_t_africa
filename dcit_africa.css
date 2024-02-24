@@ -5,13 +5,13 @@
      font-family: "Poppins", sans-serif;
 }
 
-/* body {
+body {
     background-image: url(/assets/Shape.png), url(/assets/graphic\ design\ course\ description\ background\ overlay.png);
     background-repeat: no-repeat , repeat;
     background-size: contain, cover;
     background-position: right bottom, left top;
 }
- */
+
 .navbar {
     background: #fff;
     height: 60px;
@@ -91,7 +91,8 @@
 
 .button:hover {
     background: #1b1a52;
-    transition: all 0.3s ease;
+    transition: all 4s ease;
+    opacity: .1;
 }
 
 .navbar__links:hover {
@@ -120,7 +121,7 @@
         top: -1000px;
         opacity: 1;
         transition: all 0.5s ease;
-        height: 50vh;
+        height: 40vh;
         z-index: -1;
         background: #131313;
     }
@@ -151,14 +152,30 @@
 
     .navbar__item {
         width: 100%;
+        font-size: 2rem;
     }
 
-    .navbar__links{
+    .navbar__links {
+        color: #01005e;
+        display: table;
+        justify-content: center;
+        text-decoration: none;
+        padding: 0 1rem;
+        height: 80%;
+        width: 100%;
+    }
+    
+    .navbar__item .active {
+        color: #fd7f00;
+    }
+    
+
+    /* .navbar__links{
         text-align: center;
         padding: 2rem;
         width: 100%;
         display: table;
-    }
+    } */
 
     #mobile-menu {
         position: absolute;
@@ -199,7 +216,9 @@
 
 /* Section Styling */
 .main {
-    background-color: #141414;  
+    background-image: url(/assets/contact\ page\ bg\ 1.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
 }
 
 .main__container {
@@ -209,12 +228,11 @@
     justify-content: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #141414;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
     padding: 0 50px;
-}
+ }
 
 .main__content h1 {
     font-size: 3rem;
@@ -260,19 +278,17 @@
     text-decoration: none;
 }
 
-/* .main__btn:hover {
+.main__btn::after {
     position: absolute;
     content: '';
     top: 0;
     left: 0;
     width: 0;
-    height: 50%;
+    height: 100%;
     background: #4837ff;
     transition: all 0.35s;
     border-radius: 4px;
 }
- */
-
 
 .main__btn:hover {
     color: #01005e;
@@ -315,7 +331,7 @@
 
     .main__content p {
         margin-top: 1rem;
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
     
 }
@@ -328,11 +344,11 @@
 
     .main__content p {
         margin-top: 2rem;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .main__btn {
-        padding: 12px 36px;
+        padding: 5px;
         margin: 2.5rem 0;
     }
 }

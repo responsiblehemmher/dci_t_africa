@@ -62,6 +62,10 @@
     color: #01005e; 
  }
 
+ .about__img-container {
+    text-align: center;
+}
+
  /* Mobile Responsive */
 @media screen and (max-width: 760px) {
     .about__container {
