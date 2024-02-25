@@ -1,23 +1,3 @@
-/* .courses__container {
-    
-    display: grid;
-    grid-template-columns: 3fr 4fr;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    height: 90vh;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0 50px; 
- }
- 
- .courses__content {
-    display: grid;
-    justify-self: center;
-    align-self: center; 
- }
- */
 .courses__section {
   background-image: url(/assets/graphic\ design\ course\ description\ background\ overlay.png);
     background-position: right;
@@ -35,17 +15,24 @@
  
  #services {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   padding: 20px;
 }
 
 .service {
-  text-align: center;
-  width: 200px;
+  display: none;
+  flex: 0 0 calc(50% - 20px);
+  width: 80%; 
+  max-width: 450px;
+  margin-bottom: 20px;
   padding: 20px;
+  text-align: center;
   border: 2px solid #01005e;
   border-radius: 8px;
-  
+  box-sizing: border-box; 
 }
 
 .service h2 {
@@ -63,6 +50,39 @@
 
 }
 
+/* Mobile Responsive For Services */
+@media screen and (max-width: 760px) {
+  .service {
+    flex: 0 0 100%;
+  }
+  
+  .courses h2 {
+      text-align: center;
+      margin-top: 5rem;
+      font-size: 1.5rem;
+  }
+
+  .courses .services {
+    display: table;
+  }
+  
+
+  .courses__img-content span {
+      padding: 1px 2px;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  .service {
+    flex: 0 0 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+}
+
+
 /* Testimonial Section */
 .section-2 h2 {
   margin-top: 0;
@@ -75,18 +95,25 @@
 
 .testimonials {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 960px;
+  overflow: hidden;
 }
 
 .testimonial {
+  flex-basis: 30%; 
+  text-align: center;
+  margin-bottom: 20px;
   margin: 20px;
   padding: 20px;
   border: 2px solid #01005e;
   border-radius: 5px;
   text-align: center;
   max-width: 300px;
+  flex: 0 0 100%;
+  transition: transform 0.5s ease-in-out;
+
 }
 
 .testimonial img {
@@ -115,66 +142,32 @@
 
 
 
+/* Mobile Responsive For Testimonies */
 
+@media screen and (max-width: 760px) {
+  .testimonials {
+    flex-wrap: wrap;
+  }
+  
+  .testimonial {
+    flex-basis: 45%;
+  }
 
-
-
- /* .section {
-  padding: 0 20px;
- }
-
-
- .courses .section-subtitle {
+  .testimonial p {
     color: #01005e;
-    margin-top: 20px;
-    font-weight: 600;
-    font-size: 40px;
+  }
+
+  .section-2 h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-right: 83px;
+}
 }
 
-.courses .section-title { 
-    color: aqua; 
-    
+@media screen and (max-width: 480px) {
+  .testimonial {
+    flex-basis: 100%; 
+  }
 }
 
-.courses .section-text { 
-    margin-block-end: 40px; 
-}
-
-.grid-list {
-  align-items: center;
-}
-
-.courses-card {
-  padding: 50px 30px;
-  text-align: center;
-  border-radius: 5px;
-}
-
-.courses-card .card-icon {
-  background-color: blueviolet;
-  width: 80px;
-  height: 80px;
-  display: grid;
-  place-items: center;
-  border-radius: 10px;
-  margin-inline: auto;
-  margin-block-end: 30px;
-}
-
-.courses-card .card-text {
-  color: grey;
-  font-size: 5rem;
-  margin-block: 15px 25px;
-}
-
-.courses-card .card-badge {
-  background-color: greenyellow;
-  color: blueviolet;
-  font-size: 5rem;
-  font-weight: 600;
-  padding: 2px 18px;
-  max-width: max-content;
-  margin-inline: auto;
-  border-radius: 6px;
-}
- */

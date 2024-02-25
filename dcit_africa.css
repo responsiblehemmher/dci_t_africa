@@ -156,7 +156,7 @@ body {
     }
 
     .navbar__links {
-        color: #01005e;
+        color: #05e3ff;
         display: table;
         justify-content: center;
         text-decoration: none;
@@ -169,14 +169,6 @@ body {
         color: #fd7f00;
     }
     
-
-    /* .navbar__links{
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-        display: table;
-    } */
-
     #mobile-menu {
         position: absolute;
         top: 20%;
@@ -235,6 +227,7 @@ body {
  }
 
 .main__content h1 {
+    position: relative;
     font-size: 3rem;
     font-weight: 400;
     line-height: 3.5rem;
@@ -244,6 +237,17 @@ body {
     --moz-background-clip: text;
     --webkit-text-fill-color: transparent;
     --moz-text-fill-color: transparent;
+}
+
+.main__content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: #fd7f00;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
 }
 
 .main__content span {
@@ -491,5 +495,11 @@ body {
     }
  }
 
- /* About Us Mobile */
  
+ /* KEYFRAME ANIMATIONS */
+ /* @keyframes showRight {
+    100% {
+        width: 0;
+    }
+ }
+  */

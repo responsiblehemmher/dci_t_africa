@@ -94,8 +94,13 @@
     }
 
     .about__content .content-1 {
-        margin-top: 1rem;
-        font-size: 1.5rem;
+        margin-top: 1px;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+    .about__img-content span {
+        padding: 1px 2px;
     }
     
 }
@@ -111,10 +116,20 @@
         font-size: 1.5rem;
     }
 
-    /* .main__btn {
-        padding: 12px 36px;
-        margin: 2.5rem 0;
-    } */
+    .about__img-content span {
+        padding: 2px 7px;
+        font-size: 16px;
+        border-radius: 5px;
+        margin-right: 9rem;
+    }
+
+    .about__img-content p {
+        font-size: 10px;
+        display: flex;
+        margin-top: 11px;
+        color: #05e3ff;
+        font-weight: 300;
+    }
 }
 
  
