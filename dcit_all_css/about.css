@@ -59,15 +59,22 @@
 
  .about__img-content p {
     margin-top: 10px;
-    color: #01005e; 
+    color: #01005e;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;  
+ 
  }
+
+ /* .hidden {
+    display: none;
+ } */
 
  .about__img-container {
     text-align: center;
 }
 
  /* Mobile Responsive */
-@media screen and (max-width: 760px) {
+ @media screen and (max-width: 760px) {
     .about__container {
         display: grid;
         grid-template-columns: auto;
@@ -131,5 +138,4 @@
         font-weight: 300;
     }
 }
-
  

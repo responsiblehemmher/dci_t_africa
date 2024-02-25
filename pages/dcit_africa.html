@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DCIT COURSES</title>
+    <title>DCIT HOME</title>
     <!-- FAVICONS -->
     <link rel="shortcut icon" href="/assets//DCIT logo.png" type="image/png">
 
@@ -19,8 +19,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
 
    <!-- STYLESHEET LINK -->
-<link rel="stylesheet" href="/dcit_africa.css">
-<link rel="stylesheet" href="/dcit_all_css/courses.css">
+<link rel="stylesheet" href="/dcit_all_css/dcit_africa.css">
 </head>
 <body>
     <nav class="navbar">
@@ -35,88 +34,47 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="/dcit_africa.html" class="navbar__links" onclick="setActive(this)">Home</a>
+                    <a href="/pages/dcit_africa.html" class="navbar__links active" onclick="setActive(this)">Home</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/about.html" class="navbar__links" onclick="setActive(this)">About</a>
+                    <a href="/pages/about.html" class="navbar__links" onclick="setActive(this)">About</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#" class="navbar__links active" onclick="setActive(this)">Courses</a>
+                    <a href="/pages/courses.html" class="navbar__links" onclick="setActive(this)">Courses</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/contact.html" class="navbar__links" onclick="setActive(this)">Contact</a>
+                    <a href="/pages/contact.html" class="navbar__links" onclick="setActive(this)">Contact</a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="/" class="button">Apply Now</a> 
+                    <a href="#" class="button">Apply Now</a> 
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Courses Section -->
-    <div class="courses__section">
-      <div class="courses__container">
-        <section class="courses">
-          <h2>WHAT YOU WOULD LEARN</h2>
-    
-          <div id="services">
-            <div class="service">
-              <h2>Front-End Development</h2>
-              <p>From beginner to intermediate level</p>
+
+    <!-- Home Section -->
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Embark On Your Tech
+                    <br>
+                    <span>JOURNEY</span> 
+                  </h1>
+                <p>
+                    Acquire skills you need to kickstart and became a <!-- <br> -->
+                    globally recognise genius in tech. 
+                    Here at DCIT, we <!-- <br> -->train future leaders.
+                </p>
+                <button class="main__btn"><a href="#">
+                    Apply Now
+                </a></button>
             </div>
-      
-            <div class="service">
-              <h2>Backend Development</h2>
-              <p>Learn server-side languages</p>
+            <div class="main__img-container">
+                <img src="/assets/model.png" alt="background-1" id="main__img">
             </div>
-      
-            <div class="service">
-              <h2>Data Analytics</h2>
-              <p>Unlock insights from data</p>
-            </div>
-      
-            <div class="service">
-              <h2>Graphic Design</h2>
-              <p>Master the art of design</p>
-            </div>
-          </div>
-          
-        </section>
-    
-        <!-- Testimonial Section -->
-    
-        <section class="section-2">
-          <h2>WHAT OUR GRADUANTS ARE SAYING</h2>
-    
-          <div class="testimonials">
-            <div class="testimonial">
-              <img src="/assets/model.png" alt="Person 1">
-              <p>"I started with the beginner web development course and now I'm confidently building my own websites. Thanks!"</p>
-              <span>- Simeon Gabriel</span>
-            </div>
-    
-            <div class="testimonial">
-              <img src="/assets/model.png" alt="Person 2">
-              <p>"The backend development program taught me everything I needed to know about server languages. Highly recommended!"</p>
-              <span>- Thomas Mabel</span>
-            </div>
-    
-            <div class="testimonial">
-              <img src="/assets/graphic design computer icon.png" alt="Person 3">
-              <p>"Now i can proceed in my advanced prototype design,
-                having learnt graphics design from this great institute
-              </p>
-              <span>- Adekunle Johnson</span>
-            </div>
-            
-            
-        </section>
-    
-      </div>
+        </div>
     </div>
-
-
-
 
     <!-- Footer Section -->
     <div class="footer__container">
@@ -124,14 +82,14 @@
             <div class="footer__link-wrapper">
                 <div class="footer_link-items">
                     <h2>About Us</h2>
-                    <a href="/apply-here.html">How it works</a>
-                    <a href="/">Testimonials</a>
+                    <a href="/">How it works</a>
+                    <a href="/courses.html">Testimonials</a>
                     <a href="/">Investment</a>
                     <a href="/">Terms of Services</a>
                 </div>
                 <div class="footer_link-items">
                     <h2>Contact Us</h2>
-                    <a href="/">Contact</a>
+                    <a href="/contact.html">Contact</a>
                     <a href="/">Destinations</a>
                     <a href="/">Sponsorships</a>
                 </div>
@@ -183,6 +141,7 @@
         </div>
     </div>
 
-    <script src="/dcit_africa.js"></script>
+    <script src="/page_js/dcit_africa.js"></script>
+    
 </body>
 </html>
