@@ -239,20 +239,9 @@ body {
     --moz-text-fill-color: transparent;
 }
 
-.main__content h1::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    background: #fd7f00;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1s;
-}
-
 .main__content span {
     font-weight: 700;
-    color: #fd7f00;;
+    color: #fd7f00;
 }
 
 .main__content p {
@@ -496,10 +485,15 @@ body {
  }
 
  
- /* KEYFRAME ANIMATIONS */
- /* @keyframes showRight {
-    100% {
-        width: 0;
-    }
- }
-  */
+ /* KEYFRAME ANIMATIONS FOR MAIN CONTAINER */
+ /* Define animation */
+ @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Apply animation to each line */
+.main__container .animate-line {
+    opacity: 0;
+    animation: fadeIn 5s ease forwards;
+}

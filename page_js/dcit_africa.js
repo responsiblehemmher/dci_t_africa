@@ -17,6 +17,21 @@ function setActive(element) {
   }
 
 
+// Function to animate Main Container each line 
+const animateLines = () => {
+  const lines = document.querySelectorAll('.main__container .animate-line');
+  lines.forEach((line, items) => {
+      setTimeout(() => {
+          line.style.opacity = 1;
+      }, items * 4000); 
+  });
+}
+
+// Call the function when the page is loaded
+window.addEventListener('load', animateLines);
+
+
+
   
   
 
