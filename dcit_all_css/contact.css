@@ -1,0 +1,233 @@
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-image: url('/assets/contact\ page\ bg\ 2.jpg'), url('/assets/contact\ page\ bg\ 1.jpg');
+    background-position: left top, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+  .contact__part {
+    width: 58%; 
+    margin-bottom: 20px; 
+    text-align: center;
+    flex: 1;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact__container {
+    padding: 20px;
+     
+}
+
+.contact__container form {
+    max-width: 100%;
+}
+
+.contact__part:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+.contact__container {
+    display: grid;
+    grid-template-columns: 1.1fr 1.1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+    border-left: 2px solid #fd7f00;
+ }
+
+ 
+ .contact__part h2,
+ .contact__part span
+  {
+    display: block; 
+    margin: 0 auto;
+    text-align: center;
+    color: #007bff;
+    font-weight: 600;
+ }
+
+ .contact__part span {
+    font-size: 15px;
+    color: #fd7f00;
+ }
+
+ .contact__part > .address,
+ .contact__part > .email {
+    color: #0056b3;
+ }
+
+ .fa-solid.fa-location-dot, .fa-regular.fa-envelope {
+    color: #cc6600;
+}
+
+/* Social Media Icons for Contact Info */
+.contact__social-icons {
+    margin-top: 20px;
+}
+
+.contact__social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 24px;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.contact__social-icon:last-child {
+    margin-right: 0;
+}
+
+.contact__social-icon:hover {
+    transform: translateY(-5px);
+}
+
+ .contact__part h2 {
+    margin-top: 3rem;
+ }
+
+ .contact__part h3 {
+    font-size: 15px;
+    margin-top: 5rem;
+    color: #007bff;
+ }
+
+ .contact__part p {
+    color: #fd7f00;
+    font-size: 700;
+    line-height: 1.5rem;
+ }
+
+ .contact__container h2 {
+    margin-top: -4rem; 
+}
+
+/* Contact Form CSS */
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    font-weight: bold;
+    color: #007bff;
+    width: 160%;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 160%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    height: 120px; 
+}
+
+button[type="submit"] {
+    background-color: #007bff; 
+    color: #fff; 
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; 
+}
+
+/* For screens 760px and below */
+@media screen and (max-width: 760px) {
+    .container {
+        /* display: flex; */
+        flex-direction: column;
+    }
+
+    .contact__container {
+        border-left: none; /* To Remove vertical line */
+        border-top: 3px solid #fd7f00; /* To Add horizontal line for separation */
+
+    }
+
+    .contact__part {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact__part h2 {
+        font-size: 24px;
+    }
+
+    .contact__part h3 {
+        font-size: 18px;
+    }
+
+    #contact-form {
+        width: 100%;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    label {
+        display: block;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+    }
+    .address, .email {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .contact__social-icons {
+        text-align: center;
+    }
+}
+
+/* For screens 480px and below */
+@media screen and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .contact__part h2 {
+        font-size: 20px;
+    }
+
+    .contact__part h3 {
+        font-size: 16px;
+    }
+
+    .contact__part {
+        width: 100%;
+        /* border-left: none;
+        border-top: 2px solid #fd7f00;*/        
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
