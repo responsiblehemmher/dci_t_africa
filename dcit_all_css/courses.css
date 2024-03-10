@@ -1,11 +1,12 @@
 .courses__section {
-  background-image: url(/assets/graphic\ design\ course\ description\ background\ overlay.png);
+  background-color: #010044;
+  /* background-image: url(/assets/graphic\ design\ course\ description\ background\ overlay.png);
     background-position: right;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;  */
 }
 
 .courses h2 {
-  margin-top: 0;
+  margin-top: 3rem;
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
@@ -40,7 +41,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   font-family: "Poppin", sans-serif;
-  color: #01005e;
+  color: #FF0009;
 }
 
 .service p {
@@ -58,7 +59,7 @@
   
   .courses h2 {
       text-align: center;
-      margin-top: 5rem;
+      margin-top: 2rem;
       font-size: 1.5rem;
   }
 
@@ -84,62 +85,68 @@
 
 
 /* Testimonial Section */
+
+.section-2 {
+  text-align: center;
+}
+
 .section-2 h2 {
   margin-top: 0;
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
-  color:#000;
+  color:#ffd512;
   margin-left: 10rem;
 }
 
 .testimonials {
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
   overflow: hidden;
+  position: relative;
 }
 
 .testimonial {
-  flex-basis: 30%; 
-  text-align: center;
-  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+  background-color: #f9f9f9;
   margin: 20px;
   padding: 20px;
-  border: 2px solid #01005e;
-  border-radius: 5px;
-  text-align: center;
-  max-width: 300px;
-  flex: 0 0 100%;
-  transition: transform 0.5s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.5s ease-in-out;
+}
 
+.testimonial.active {
+  opacity: 1;
+  position: relative;
 }
 
 .testimonial img {
   width: 100px;
   height: 100px;
+  border: 1px solid #FF0009;
   border-radius: 50%;
   margin-bottom: 10px;
-  border: 1px solid #fff;
 }
 
 .testimonial p {
   font-style: italic;
-  color: white;
+  color: #FF0009;
   font-weight: bold;
-  line-height: 1.5rem;
+  line-height: 1.2;
+  font-size: 16px;
+  margin-bottom: 10px;
+  letter-spacing: normal;
 }
 
 .testimonial span {
   font-weight: bold;
   color: #ffd512;
 }
-
-.courses__img-container {
-  text-align: center;
-}
-
 
 
 /* Mobile Responsive For Testimonies */
